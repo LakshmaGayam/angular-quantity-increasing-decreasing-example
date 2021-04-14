@@ -1,0 +1,7 @@
+<div *ngFor="let item of array1; let i = index">
+  <p>{{item.name}}</p>
+  <button (click)="increaseOrDecrease('add' , i)">Add</button>
+  <input type="text" [(ngModel)]="item.qty">
+  <button (click)="increaseOrDecrease('sub' ,i)">decrease</button>
+
+</div>
